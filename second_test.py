@@ -29,11 +29,11 @@ def main(page: ft.Page):
         input.value = ""
         page.update()
 
-    knopka_dobav = ft.ElevatedButton("Добавить", on_click=add)
+    button_add = ft.ElevatedButton("Добавить", on_click=add)
 
     page.add(
         ft.Text("Список покупок", size=24, weight="bold"),
-        ft.Row([input, knopka_dobav]),
+        ft.Row([input, button_add]),
         list_of_items
     )
 
